@@ -1,0 +1,49 @@
+#restaurants {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f6f6f6;
+    padding-bottom: 70px;
+}
+
+.title-rest {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+ 
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cards-rest {
+    background-color: white;
+    height: 250px;
+    width: 100%;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.cards-img {
+    object-fit: cover;
+    height: 65%;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.cards-text-block {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.cards-text-block p {
+    padding-top: 5px;
+}
+
+.cards a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.cards a:visited {
+    color: black;
+}

@@ -1,0 +1,16 @@
+footer {
+    background-color: #353535;
+    padding-top: 20px;
+}
+
+footer .title {
+    padding-left: 20px;
+}
+
+ul {
+    color: white;
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
