@@ -1,13 +1,10 @@
 #restaurants {
-    padding-left: 15px;
-    padding-right: 15px;
     background-color: #f6f6f6;
-    padding-bottom: 70px;
+    padding: 0px 15px 70px 15px;
 }
 
 .title-rest {
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding: 40px 0px 20px 0px;
 }
  
 .cards {
@@ -23,7 +20,7 @@
     box-shadow: 1px 1px 5px grey;
 }
 
-.cards-img {
+.cards-rest__img {
     object-fit: cover;
     height: 65%;
     width: 100%;
@@ -31,8 +28,7 @@
 }
 
 .cards-text-block {
-    padding-top: 15px;
-    padding-left: 15px;
+    padding: 15px 0px 0px 15px;
 }
 
 .cards-text-block p {
@@ -46,4 +42,10 @@
 
 .cards a:visited {
     color: black;
+}
+
+.cards-text-block i{
+    padding: 60px 0px 0px 280px;
+    transform: translate(0%, -140%);
+    color: #9356DC;
 }

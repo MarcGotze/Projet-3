@@ -10,7 +10,5 @@ footer .title {
 ul {
     color: white;
     list-style: none;
-    padding-left: 20px;
-    padding-top: 15px;
-    padding-bottom: 25px;
+    padding: 15px 0px 25px 20px;
 }

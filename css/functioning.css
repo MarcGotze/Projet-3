@@ -1,11 +1,9 @@
 #functioning {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0px 15px 0px 15px;
 }
 
 .title-funct {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 40px 0px 20px 0px;
 }
 
 .buttons-container {
