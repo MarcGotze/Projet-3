@@ -4,7 +4,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d7bb70cdb2.js" crossorigin="anonymous"></script>
         <title>ohmyfood</title>
     </head>
@@ -14,10 +18,10 @@
             <img src="images/logo/ohmyfood.png" alt="ohmyfood">
         </header>
 
-        <section id="research">
-            <div class="research__city">
-                <i class="fa-solid fa-location-dot"></i><p>Paris, Belleville</p>
-            </div>
+        <section class="research">
+            <form class="research__form" method="post" action="index.html">
+                <i class="fa-solid fa-location-dot"></i><input type="search" name="ville">
+            </form>
 
             <div class="research__box">
                 <div class="research__title">
@@ -33,7 +37,7 @@
             </div>
         </section>
 
-        <section id="functioning">
+        <section class="functioning">
             <div class="functioning__title">
                 <h2>Fonctionnement</h2>
             </div>

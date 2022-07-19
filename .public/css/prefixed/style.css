@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+.title {
+  font-family: "Shrikhand", cursive;
+  color: white;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3MvbWFpbi5zY3NzIiwiLi4vLi4vLi4vcHVibGljL2Nzcy9zdHlsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQVEsOEVBQUE7QUFDQSx3RkFBQTtBQUdSO0VBQ0ksaUNBQUE7RUFDQSw4QkFBQTtVQUFBLHNCQUFBO0VBQ0EsU0FBQTtBQ0RKOztBRElBO0VBQ0ksaUNBQUE7RUFDQSxZQUFBO0FDREoiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

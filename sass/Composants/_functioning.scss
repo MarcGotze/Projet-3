@@ -1,0 +1,11 @@
+.functioning {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    height: 300px;
+    &btn-box {
+        display: flex;
+        flex-direction: column;
+    }
+}
