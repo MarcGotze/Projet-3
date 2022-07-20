@@ -14,4 +14,7 @@ input[type=search] {
     background-color: $color-research;
     border: none;
     font-weight: bold;
+    &:active {
+        border: none;
+    }
 }

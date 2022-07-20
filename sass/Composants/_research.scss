@@ -1,8 +1,7 @@
 .research {
     text-align: center;   
     &__box {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         justify-content: center;
         align-items: center;
         padding: 100px 50px 50px 50px;
@@ -16,11 +15,11 @@
         padding: 0px 25px 0px 25px;
         margin-bottom: 60px;
         border-radius: 25px 25px 25px 25px;
-        box-shadow: 3px 3px 3px grey;
         color: white;
         font-size: 1em;
         font-weight: bold;
         background-color: $color-primary;
+        @include button-shadow;
     }
    h2 {
         padding-bottom: 30px;

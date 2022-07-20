@@ -1,0 +1,13 @@
+@mixin button-shadow {
+    box-shadow: 3px 3px 5px #D8D8D8;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin title-format {
+    font-weight: bold;
+    padding: 20px 0px 0px 20px;
+}
