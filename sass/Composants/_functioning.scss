@@ -2,6 +2,7 @@
     @include flex-column;
     gap: 30px;
     height: 400px;
+    width: 100%;
     margin-top: 30px;
     h2 {
         font-weight: bold;
@@ -11,7 +12,7 @@
     button {
         border: none;
         height: 70px;
-        width: 320px;
+        width: 90%;
         background-color: $color-background;
         border-radius: 25px 25px 25px 25px;
         font-weight: bold;
@@ -40,26 +41,29 @@
         color: white;
         background-color: $color-primary;
         position: absolute;
-        transform: translate(-40%, 115%);
+        transform: translate(-795%, 115%);
     }
 
     .element-1 {
+        @include funct-btn-box;
         i {
-            transform: translate(240%, 125%);
+            transform: translate(-810%, 125%);
             font-size: 1.20em;
         }
     }
 
     .element-2 {
+        @include funct-btn-box;
         i {
-            transform: translate(200%, 140%);
+            transform: translate(-630%, 140%);
             font-size: 1.15em;
         }
     }
 
     .element-3 {
+        @include funct-btn-box;
         i {
-            transform: translate(170%, 130%);
+            transform: translate(-535%, 130%);
             font-size: 1.20em;
         }
     }

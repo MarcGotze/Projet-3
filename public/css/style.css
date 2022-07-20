@@ -90,6 +90,7 @@ footer li i {
   flex-direction: column;
   gap: 30px;
   height: 400px;
+  width: 100%;
   margin-top: 30px;
 }
 .functioning h2 {
@@ -100,7 +101,7 @@ footer li i {
 .functioning button {
   border: none;
   height: 70px;
-  width: 320px;
+  width: 90%;
   background-color: #F6F6F6;
   border-radius: 25px 25px 25px 25px;
   font-weight: bold;
@@ -130,18 +131,33 @@ footer li i {
   color: white;
   background-color: #9356DC;
   position: absolute;
-  transform: translate(-40%, 115%);
+  transform: translate(-795%, 115%);
+}
+.functioning .element-1 {
+  display: flex;
+  justify-content: center;
+  width: 95%;
 }
 .functioning .element-1 i {
-  transform: translate(240%, 125%);
+  transform: translate(-810%, 125%);
   font-size: 1.2em;
 }
+.functioning .element-2 {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
 .functioning .element-2 i {
-  transform: translate(200%, 140%);
+  transform: translate(-630%, 140%);
   font-size: 1.15em;
 }
+.functioning .element-3 {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
 .functioning .element-3 i {
-  transform: translate(170%, 130%);
+  transform: translate(-535%, 130%);
   font-size: 1.2em;
 }
 
