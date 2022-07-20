@@ -10,6 +10,7 @@
 .cards {
     @include flex-column;
     margin-top: 20px;
+    padding-bottom: 70px;
     align-items: center;
     gap: 20px;
 }
