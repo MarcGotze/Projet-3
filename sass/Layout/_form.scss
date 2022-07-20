@@ -5,16 +5,16 @@ form {
     background-color: $color-research;
     border-top: 3px solid #d1d1d1;
     height: 50px;
-    i {
-        padding-right: 5%;
-    }
+        i {
+            padding-right: 5%;
+        }
 }
 
 input[type=search] {
     background-color: $color-research;
     border: none;
     font-weight: bold;
-    &:active {
-        border: none;
-    }
+        &:active {
+            border: none;
+        }
 }

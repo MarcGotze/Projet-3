@@ -204,14 +204,23 @@ footer li i {
   padding-top: 10px;
   font-size: 1.1em;
 }
+.cards-rest__new {
+  height: 30px;
+  width: 80px;
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  background-color: #99E2D0;
+  color: #278870;
+  border-radius: 2px;
+  transform: translate(300%, -530%);
+  box-shadow: 2px 2px 6px grey;
+  position: absolute;
+}
 .cards-rest a {
   text-decoration: none;
   color: black;
-}
-
-.title {
-  font-family: "Shrikhand", cursive;
-  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
