@@ -28,7 +28,10 @@ form i {
 input[type=search] {
   background-color: #EAEAEA;
   border: none;
+  width: 40%;
   font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
 }
 input[type=search]:active {
   border: none;
@@ -70,6 +73,7 @@ footer li i {
   background-color: #F6F6F6;
 }
 .research__btn button {
+  box-shadow: 3px 3px 5px #D8D8D8;
   border: none;
   height: 50px;
   padding: 0px 25px 0px 25px;
@@ -78,8 +82,7 @@ footer li i {
   color: white;
   font-size: 1em;
   font-weight: bold;
-  background-color: #9356DC;
-  box-shadow: 3px 3px 5px #D8D8D8;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 .research h2 {
   padding-bottom: 30px;
@@ -99,6 +102,7 @@ footer li i {
   padding: 20px 0px 0px 20px;
 }
 .functioning button {
+  box-shadow: 3px 3px 5px #D8D8D8;
   border: none;
   height: 70px;
   width: 90%;
@@ -106,7 +110,6 @@ footer li i {
   border-radius: 25px 25px 25px 25px;
   font-weight: bold;
   font-size: 1em;
-  box-shadow: 3px 3px 5px #D8D8D8;
 }
 .functioning button:active {
   background-color: #F5EDFF;
@@ -182,11 +185,11 @@ footer li i {
 }
 
 .cards-rest {
+  box-shadow: 3px 3px 5px #D8D8D8;
   background-color: white;
   height: 250px;
   width: 90%;
   border-radius: 25px 25px 25px 25px;
-  box-shadow: 3px 3px 5px #D8D8D8;
 }
 .cards-rest__img {
   object-fit: cover;
@@ -198,6 +201,9 @@ footer li i {
   width: 8%;
   height: 8%;
   transform: translate(1070%, -160%);
+}
+.cards-rest__heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
 }
 .cards-rest__txt-box {
   padding-left: 10px;
@@ -214,9 +220,10 @@ footer li i {
   background-color: #99E2D0;
   color: #278870;
   border-radius: 2px;
-  transform: translate(300%, -530%);
   box-shadow: 2px 2px 6px grey;
   position: absolute;
+  transform: translate(0%, -540%);
+  margin-left: 240px;
 }
 .cards-rest a {
   text-decoration: none;

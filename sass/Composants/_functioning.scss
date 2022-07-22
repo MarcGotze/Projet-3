@@ -10,6 +10,7 @@
             padding: 20px 0px 0px 20px;
         }
             button {
+                @include button-shadow;
                 border: none;
                 height: 70px;
                 width: 90%;
@@ -17,7 +18,6 @@
                 border-radius: 25px 25px 25px 25px;
                 font-weight: bold;
                 font-size: 1em;
-                @include button-shadow;
                 &:active {
                     background-color: $color-hover-btn;
                 }

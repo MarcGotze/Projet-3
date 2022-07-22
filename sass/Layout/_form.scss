@@ -13,7 +13,10 @@ form {
 input[type=search] {
     background-color: $color-research;
     border: none;
+    width: 40%;
     font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
         &:active {
             border: none;
         }

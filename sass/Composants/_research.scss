@@ -10,6 +10,7 @@
         background-color: $color-background;
     }
     &__btn button{
+        @include button-shadow;
         border: none;
         height: 50px;
         padding: 0px 25px 0px 25px;
@@ -18,8 +19,7 @@
         color: white;
         font-size: 1em;
         font-weight: bold;
-        background-color: $color-primary;
-        @include button-shadow;
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     }
     h2 {
         padding-bottom: 30px;
