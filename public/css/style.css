@@ -253,6 +253,8 @@ footer li i {
 .header-rest__img {
   margin-top: 25px;
   width: 100%;
+  height: 250px;
+  object-fit: cover;
   position: relative;
   z-index: 0;
 }
