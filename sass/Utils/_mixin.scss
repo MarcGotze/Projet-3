@@ -7,6 +7,12 @@
     flex-direction: column;
 }
 
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 @mixin title-format {
     font-weight: bold;
     padding: 20px 0px 0px 20px;
@@ -16,4 +22,9 @@
     display: flex;
     justify-content: center;
     width: 95%;
+}
+
+@mixin  menu-border-radius {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }

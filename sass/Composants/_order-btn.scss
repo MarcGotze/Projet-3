@@ -1,0 +1,15 @@
+.order {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    &--btn {
+        @include button-shadow;
+        height: 50px;
+        width: 180px;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        font-size: 1em;
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    }
+}
