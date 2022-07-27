@@ -84,6 +84,10 @@ footer li i {
   font-weight: bold;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
+.research__btn button:hover {
+  background: linear-gradient(to bottom right, #ae80e5, #fface8);
+  box-shadow: 3px 3px 5px #b2b2b2;
+}
 .research h2 {
   padding-bottom: 30px;
 }
@@ -114,12 +118,8 @@ footer li i {
 .functioning button:active {
   background-color: #F5EDFF;
 }
-.functioning button:active + .element i {
+.functioning button:active i {
   color: #9356DC;
-}
-.functioning i {
-  position: absolute;
-  color: #7E7E7E;
 }
 .functioning__btn-box {
   display: flex;
@@ -136,34 +136,53 @@ footer li i {
   text-align: center;
   color: white;
   background-color: #9356DC;
-  position: absolute;
-  transform: translate(-795%, 115%);
+  margin-left: -15px;
+}
+.functioning i {
+  color: #7E7E7E;
+  margin-left: 8%;
+}
+.functioning h4 {
+  flex-grow: 4;
+  margin-right: 15%;
 }
 .functioning .element-1 {
   display: flex;
   justify-content: center;
-  width: 95%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 .functioning .element-1 i {
-  transform: translate(-810%, 125%);
   font-size: 1.2em;
 }
 .functioning .element-2 {
   display: flex;
   justify-content: center;
-  width: 95%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 .functioning .element-2 i {
-  transform: translate(-630%, 140%);
   font-size: 1.15em;
 }
 .functioning .element-3 {
   display: flex;
   justify-content: center;
-  width: 95%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 .functioning .element-3 i {
-  transform: translate(-535%, 130%);
   font-size: 1.2em;
 }
 
@@ -200,18 +219,21 @@ footer li i {
   width: 100%;
   border-radius: 25px 25px 0px 0px;
 }
-.cards-rest__heart {
-  width: 8%;
-  height: 8%;
-  transform: translate(1070%, -160%);
-}
-.cards-rest__heart:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
+.cards-rest__title, .cards-rest__subtitle {
+  width: 50%;
 }
 .cards-rest__txt-box {
   padding-left: 10px;
   padding-top: 10px;
   font-size: 1.1em;
+}
+.cards-rest__txt-box i {
+  position: relative;
+  bottom: 35px;
+  left: 280px;
+  font-size: 1.2em;
+  color: white;
+  -webkit-text-stroke: 2px black;
 }
 .cards-rest__new {
   height: 30px;
@@ -342,6 +364,10 @@ footer li i {
   color: white;
   font-size: 1em;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+.order--btn:hover {
+  background: linear-gradient(to bottom right, #ae80e5, #fface8);
+  box-shadow: 3px 3px 5px #b2b2b2;
 }
 
 /*# sourceMappingURL=style.css.map */

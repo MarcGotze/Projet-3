@@ -16,7 +16,7 @@
 }
 
 .cards-rest {
-    @include button-shadow;
+    @include button-shadow ($color-shadow);
     background-color: white;
     height: 250px;
     width: 90%;
@@ -27,18 +27,21 @@
             width: 100%;
             border-radius: 25px 25px 0px 0px;
         }
-        &__heart {
-            width: 8%;
-            height: 8%;
-            transform: translate(1070%, -160%);
-            &:hover {
-                background: linear-gradient($color-primary, $color-secondary);
-            }
+        &__title, &__subtitle {
+            width: 50%;
         }
         &__txt-box {
             padding-left: 10px;
             padding-top: 10px;
             font-size: 1.1em;
+            & i{
+                position: relative;
+                bottom: 35px;
+                left: 280px;
+                font-size: 1.2em;
+                color: white;
+                -webkit-text-stroke: 2px black;
+            }
         }
         &__new {
             height: 30px;

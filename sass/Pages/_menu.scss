@@ -56,7 +56,7 @@
         }
     }
     &__box button {
-        @include button-shadow;
+        @include button-shadow($color-shadow);
         border: none;
         background-color: white;
         width: 95%;

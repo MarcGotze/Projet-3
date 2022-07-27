@@ -1,5 +1,5 @@
-@mixin button-shadow {
-    box-shadow: 3px 3px 5px #D8D8D8;
+@mixin button-shadow ($color) {
+    box-shadow: 3px 3px 5px $color;
 }
 
 @mixin flex-column {
@@ -21,10 +21,25 @@
 @mixin funct-btn-box {
     display: flex;
     justify-content: center;
-    width: 95%;
+    width: 90%;
 }
 
 @mixin  menu-border-radius {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+}
+
+@mixin btn-box-center {
+    @include funct-btn-box;
+    @include flex-row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin color-swap {
+    $color-1: lighten($color-primary, 10%);
+    $color-2: lighten($color-secondary, 10%);
+    $color-3: darken($color-shadow, 15%);
+    background: linear-gradient(to bottom right, $color-1, $color-2);
+    box-shadow: 3px 3px 5px $color-3;
 }

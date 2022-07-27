@@ -10,7 +10,7 @@
             padding: 20px 0px 0px 20px;
         }
         button {
-            @include button-shadow;
+            @include button-shadow ($color-shadow);
             border: none;
             height: 70px;
             width: 90%;
@@ -20,14 +20,10 @@
             font-size: 1em;
             &:active {
                 background-color: $color-hover-btn;
+                & i {
+                    color: $color-primary;
+                }
             }
-            &:active + .element i{
-                color: $color-primary;
-            }
-        }
-        i {
-            position: absolute;
-            color: $color-icon-off;
         }
         &__btn-box {
             @include flex-column;
@@ -43,30 +39,35 @@
             text-align: center;
             color: white;
             background-color: $color-primary;
-            position: absolute;
-            transform: translate(-795%, 115%);
+            margin-left: -15px;
+
+        }
+        i {
+            color: $color-icon-off;
+            margin-left: 8%;
+        }
+        h4 {
+            flex-grow: 4;
+            margin-right: 15%;
         }
 
     .element-1 {
-        @include funct-btn-box;
+        @include btn-box-center;
             i {
-                transform: translate(-810%, 125%);
                 font-size: 1.20em;
             }
     }
 
     .element-2 {
-        @include funct-btn-box;
+        @include btn-box-center;
             i {
-                transform: translate(-630%, 140%);
                 font-size: 1.15em;
             }
     }
 
     .element-3 {
-        @include funct-btn-box;
+        @include btn-box-center;
             i {
-                transform: translate(-535%, 130%);
                 font-size: 1.20em;
             }
     }
