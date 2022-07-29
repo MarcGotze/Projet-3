@@ -1,12 +1,18 @@
+//UTILS//
 @import "./Utils/variables";
 @import "./Utils/mixin";
+@import "./Utils/keyframes";
+//BASE//
 @import "./Base/base";
+//LAYOUT//
 @import "./Layout/header";
 @import "./Layout/form";
 @import "./Layout/footer";
+//PAGES//
 @import "./Pages/research";
 @import "./Pages/functioning";
 @import "./Pages/restaurants";
 @import "./Pages/header-rest";
 @import "./Pages/menu";
+//COMPOSANTS//
 @import "./Composants/order-btn";
