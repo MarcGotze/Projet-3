@@ -2,14 +2,18 @@
     @include flex-column;
     align-items: center;
     &__box {
-        @include flex-row;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
         & i {
             font-size: 1.5em;
-            padding: 5px 310px 0px 0px;
+            padding-top: 5px;
+            padding-left: 10px;
         }
-    }
-    &__logo {
-        position: absolute;
+        & img{
+            margin-right: 90px;
+        }
     }
     &__img {
         margin-top: 25px;

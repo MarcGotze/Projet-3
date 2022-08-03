@@ -1,6 +1,35 @@
+header, .research, .functioning, .restaurants, footer{
+    position: relative;
+    animation-name: loading;
+    animation-duration: 6000ms;
+}
+
+#progress {
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 3vh;
+
+    &__bar {
+        opacity: 1;
+        height: 3vh;
+        background: linear-gradient(to left, $color-secondary, $color-primary);
+        border-radius: 25px 25px 25px 25px;
+        position: fixed;
+        z-index: 1;
+        animation-name: loading-bar;
+        animation-duration: 3500ms;
+        animation-fill-mode: forwards;
+    }  
+}
+
 .restaurants {
     @include flex-column;
     background-color: $color-background;
+
         &__title {
             @include title-format;
             margin-top: 30px;
@@ -22,18 +51,21 @@
     width: 90%;
     border-radius: 25px 25px 25px 25px;
     position: relative;
+
         &__img {
             object-fit: cover;
             height: 70%;
             width: 100%;
             border-radius: 25px 25px 0px 0px;
         }
+
         &__txt-box {
             width: 100%;
             display: flex;
             flex-direction: column;
             padding: 10px 0px 0px 10px;
             font-size: 1.1em;
+
             & i{
                 position: absolute;
                 align-self: flex-end;
@@ -42,10 +74,10 @@
                 margin: 20px 20px 0px 0px;
                 color: white;
                 text-shadow: 0 0 3px #000;
+
                 &:hover {
                     animation-name: heart-fill-up;
                     animation-duration: 1000ms;
-                    animation-fill-mode: forwards;
                 }
             }
         }

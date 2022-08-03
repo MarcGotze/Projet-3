@@ -44,3 +44,7 @@
     box-shadow: 3px 3px 5px $color-3;
 }
 
+// BOUCLES //
+@for $i from 1 to 10 {
+    .menu__box button:nth-child(#{$i}) {animation-delay: $i * 0.30s;}
+}

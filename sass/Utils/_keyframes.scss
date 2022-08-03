@@ -1,3 +1,32 @@
+@keyframes loading {
+    0% {
+        opacity: 0.10
+    }   
+    100% {
+        opacity: 1;
+    }  
+}
+
+@keyframes loading-bar {
+    0% {
+        width: 0%;
+    }
+    17% {
+        width: 10%;
+    }
+    24% {
+        width: 32%;
+    }
+    46% {
+        width: 73%;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        opacity: 0;
+    }
+}
+
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -13,11 +42,9 @@
 @keyframes heart-fill-up {
     from {
         transform-origin: bottom;
-        transition-property: color;
-        transform: scaleY(0);
+        opacity: 0;
     }
     to {
-        color: $color-primary;
-        transform: scaleY(1);
+        opacity: 1;
     }
 }

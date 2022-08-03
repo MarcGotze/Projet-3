@@ -38,27 +38,31 @@
         &--btn {
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
             height: 60px;
             padding: 10px 0px 0px 10px;
+            opacity: 0;
             animation-name: fade-in;
             animation-duration: 2000ms;
             animation-fill-mode: forwards;
         }
+        &--content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;   
+        }
         &--plat {
             font-size: 1.4em;
             font-weight: bold;
+            align-self: flex-start;
         }
         &--misc {
             font-size: 1.1em;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
         &--prix {
-            align-self: flex-end;
-            margin-top: -18px;
-            padding-right: 25px;
             font-weight: bold;
+            align-self: flex-end;
+            padding-right: 20px;
         }
     }
     &__box button {
