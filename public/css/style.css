@@ -42,6 +42,16 @@
     opacity: 1;
   }
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
 @keyframes loading-bar {
   0% {
     width: 0%;
@@ -279,34 +289,20 @@ footer li i {
 .loading_header, .research, .functioning, .restaurants, .loading_footer {
   position: relative;
   animation-name: loading;
-  animation-duration: 6000ms;
+  animation-duration: 5s;
 }
 
 #progress {
   overflow: hidden;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 3vh;
-}
-#progress__bar {
-  opacity: 1;
-  height: 3vh;
-  background: linear-gradient(to left, #FF79DA, #9356DC);
-  border-radius: 25px 25px 25px 25px;
-  z-index: 1;
-  animation-name: loading-bar;
-  animation-duration: 3000ms;
-  animation-fill-mode: forwards;
-}
-#progress__bar p {
-  font-weight: bold;
-  font-size: 1em;
-  padding-left: 20px;
-  font-family: "Roboto", sans-serif;
-  color: white;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #FF79DA;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear forwards;
+  top: 40%;
+  left: 35%;
 }
 
 .restaurants {
@@ -456,9 +452,8 @@ footer li i {
 .menu__box--btn {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   height: 60px;
-  padding: 10px 0px 0px 10px;
+  padding: 10px 20px 0px 10px;
   opacity: 0;
   animation-name: fade-in;
   animation-duration: 2000ms;
@@ -468,6 +463,7 @@ footer li i {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 .menu__box--plat {
   font-size: 1.4em;
@@ -480,7 +476,6 @@ footer li i {
 .menu__box--prix {
   font-weight: bold;
   align-self: flex-end;
-  padding-right: 20px;
 }
 .menu__box button {
   box-shadow: 3px 3px 5px #D8D8D8;
