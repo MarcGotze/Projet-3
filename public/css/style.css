@@ -52,32 +52,6 @@
     opacity: 0;
   }
 }
-@keyframes loading-bar {
-  0% {
-    width: 0%;
-  }
-  17% {
-    width: 10%;
-  }
-  24% {
-    width: 20%;
-  }
-  46% {
-    width: 47%;
-    opacity: 1;
-  }
-  85% {
-    width: 88%;
-    opacity: 0.3;
-  }
-  95% {
-    opacity: 0.1;
-  }
-  100% {
-    width: 100%;
-    opacity: 0;
-  }
-}
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -89,13 +63,20 @@
     transform: translateY(0px);
   }
 }
-@keyframes heart-fill-up {
+@keyframes check-in {
   from {
-    transform-origin: bottom;
-    opacity: 0;
+    width: 0%;
   }
   to {
-    opacity: 1;
+    width: 20%;
+  }
+}
+@keyframes check-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 * {
@@ -389,17 +370,18 @@ footer li i {
 }
 .header-rest__box {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+}
+.header-rest__box a {
+  padding-left: 20px;
 }
 .header-rest__box i {
   font-size: 1.5em;
-  padding-top: 5px;
-  padding-left: 10px;
 }
-.header-rest__box img {
-  margin-right: 90px;
+.header-rest__logo {
+  margin-right: 23%;
 }
 .header-rest__img {
   margin-top: 25px;
@@ -452,6 +434,7 @@ footer li i {
   margin-bottom: 30px;
 }
 .menu__box--btn {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 60px;
@@ -478,6 +461,34 @@ footer li i {
 .menu__box--prix {
   font-weight: bold;
   align-self: flex-end;
+}
+.menu__box--validate {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 14px 14px 0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.menu__box--validate::before {
+  content: "";
+  background-color: #99E2D0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.6 ease;
+  width: 0%;
+  height: 100%;
+}
+.menu__box--validate:hover::before {
+  animation-name: check-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.menu__box--validate i {
+  display: none;
 }
 .menu__box button {
   box-shadow: 3px 3px 5px #D8D8D8;

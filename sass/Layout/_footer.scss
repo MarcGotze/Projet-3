@@ -1,19 +1,23 @@
+// FOOTER //
 footer {
     padding-bottom: 20px;
     background-color: $color-footer;
     color: white;
+        //TITRE//
         h4{
             font-family: $font-shrikhand;
             font-weight: lighter;
             font-size: 1.2em;
             padding: 25px 0px 0px 20px;
         }
+        //CONTENEUR//
         ul {
             @include flex-column;
             gap: 8px;
             list-style: none;
             padding: 20px;
         }
+        //ELEMENTS//
         li i{
             padding-right: 10px;
         }

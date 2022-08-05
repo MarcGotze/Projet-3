@@ -1,3 +1,4 @@
+//MENUS RESTAURANTS//
 .menu {
     @include menu-border-radius;
     position: relative;
@@ -31,11 +32,13 @@
                 margin-top: 3px
             }
     }
+    //BOUTONS DES PLATS//
     &__box {
         @include flex-column;
         gap: 15px;
         margin-bottom: 30px;
         &--btn {
+            position: relative;
             display: flex;
             flex-direction: column;
             height: 60px;
@@ -44,6 +47,7 @@
             animation-name: fade-in;
             animation-duration: 2000ms;
             animation-fill-mode: forwards;
+
         }
         &--content {
             display: flex;
@@ -62,7 +66,40 @@
         &--prix {
             font-weight: bold;
             align-self: flex-end;
+           
         }
+        &--validate {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 0 14px 14px 0;
+            right: 0;
+            top: 0;
+            overflow: hidden;
+            transition: 1s all ease;
+            
+            &::before {
+                content: "";
+                background-color: $color-tertiary;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: all 0.6 ease;
+                width: 0%;
+                height: 100%;
+            }
+
+            &:hover::before {
+                animation-name: check-in;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+
+            & i {
+                display: none;
+            }
+        }
+
     }
     &__box button {
         @include button-shadow($color-shadow);

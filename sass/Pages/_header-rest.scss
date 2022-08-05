@@ -1,19 +1,21 @@
+//HEADER DES MENUS//
 .header-rest {
     @include flex-column;
     align-items: center;
     &__box {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
+        & a {
+            padding-left: 20px;
+        }
         & i {
             font-size: 1.5em;
-            padding-top: 5px;
-            padding-left: 10px;
         }
-        & img{
-            margin-right: 90px;
-        }
+    }
+    &__logo {
+        margin-right: 23%;
     }
     &__img {
         margin-top: 25px;

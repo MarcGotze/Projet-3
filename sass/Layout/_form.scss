@@ -1,3 +1,4 @@
+// FORMULAIRE DE RECHERCHE //
 form {
     display: flex;
     justify-content: center;
@@ -5,11 +6,13 @@ form {
     background-color: $color-research;
     border-top: 3px solid #d1d1d1;
     height: 50px;
+        //ICONE PIN//
         i {
             padding-right: 5%;
         }
 }
 
+// BARRE DE RECHERCHE //
 input[type=search] {
     background-color: $color-research;
     border: none;
