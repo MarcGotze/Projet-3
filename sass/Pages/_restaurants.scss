@@ -68,8 +68,7 @@
                 line-height: 0;
                 font-size: 1.2em;
                 margin: 20px 20px 0px 0px;
-                color: white;
-                text-shadow: 0 0 3px #000;
+                color: $color-primary;
 
                 &:hover {
                     animation-name: heart-fill-up;

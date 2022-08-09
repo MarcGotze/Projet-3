@@ -1,36 +1,36 @@
-.menu__box button:nth-child(1) {
+.menu__box a:nth-child(1) {
   animation-delay: 0.3s;
 }
 
-.menu__box button:nth-child(2) {
+.menu__box a:nth-child(2) {
   animation-delay: 0.6s;
 }
 
-.menu__box button:nth-child(3) {
+.menu__box a:nth-child(3) {
   animation-delay: 0.9s;
 }
 
-.menu__box button:nth-child(4) {
+.menu__box a:nth-child(4) {
   animation-delay: 1.2s;
 }
 
-.menu__box button:nth-child(5) {
+.menu__box a:nth-child(5) {
   animation-delay: 1.5s;
 }
 
-.menu__box button:nth-child(6) {
+.menu__box a:nth-child(6) {
   animation-delay: 1.8s;
 }
 
-.menu__box button:nth-child(7) {
+.menu__box a:nth-child(7) {
   animation-delay: 2.1s;
 }
 
-.menu__box button:nth-child(8) {
+.menu__box a:nth-child(8) {
   animation-delay: 2.4s;
 }
 
-.menu__box button:nth-child(9) {
+.menu__box a:nth-child(9) {
   animation-delay: 2.7s;
 }
 
@@ -45,11 +45,9 @@
 @keyframes spin {
   0% {
     transform: rotate(0deg);
-    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0;
   }
 }
 @keyframes fade-in {
@@ -335,8 +333,7 @@ footer li i {
   line-height: 0;
   font-size: 1.2em;
   margin: 20px 20px 0px 0px;
-  color: white;
-  text-shadow: 0 0 3px #000;
+  color: #9356DC;
 }
 .cards-rest__txt-box i:hover {
   animation-name: heart-fill-up;
@@ -397,9 +394,8 @@ footer li i {
   border-top-right-radius: 25px;
   position: relative;
   background-color: #F6F6F6;
-  padding-left: 20px;
+  padding: 0px 20px 50px 20px;
   margin-top: -55px;
-  padding-bottom: 50px;
 }
 .menu__title {
   display: flex;
@@ -434,11 +430,17 @@ footer li i {
   margin-bottom: 30px;
 }
 .menu__box--btn {
-  position: relative;
+  box-shadow: 3px 3px 5px #D8D8D8;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 15px;
   height: 60px;
-  padding: 10px 20px 0px 10px;
+  width: 100%;
+  padding: 10px 20px 10px 10px;
   opacity: 0;
   animation-name: fade-in;
   animation-duration: 2000ms;
@@ -446,49 +448,57 @@ footer li i {
 }
 .menu__box--content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
+.menu__box--content:hover + .menu__box--validate {
+  transform: translateX(0%);
+}
+.menu__box--content:hover + .menu__box--validate i {
+  animation-name: spin;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+}
+.menu__box--sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .menu__box--plat {
-  font-size: 1.4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.1em;
   font-weight: bold;
   align-self: flex-start;
 }
 .menu__box--misc {
-  font-size: 1.1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.9em;
 }
 .menu__box--prix {
   font-weight: bold;
   align-self: flex-end;
 }
 .menu__box--validate {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 0 14px 14px 0;
-  right: 0;
-  top: 0;
-  overflow: hidden;
-  transition: 1s all ease;
-}
-.menu__box--validate::before {
-  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #99E2D0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: all 0.6 ease;
-  width: 0%;
-  height: 100%;
-}
-.menu__box--validate:hover::before {
-  animation-name: check-in;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  border-radius: 0 15px 15px 0;
+  height: 60px;
+  width: 25%;
+  margin: -10px -21px 0px 20px;
+  transform: translateX(100%);
+  transition-property: transform;
+  transition-duration: 800ms;
 }
 .menu__box--validate i {
-  display: none;
+  color: white;
 }
 .menu__box button {
   box-shadow: 3px 3px 5px #D8D8D8;
@@ -508,6 +518,8 @@ footer li i {
   box-shadow: 3px 3px 5px #D8D8D8;
   height: 50px;
   width: 180px;
+  text-align: center;
+  padding-top: 15px;
   border: none;
   border-radius: 25px;
   color: white;

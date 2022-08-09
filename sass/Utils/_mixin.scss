@@ -36,6 +36,12 @@
     justify-content: space-around;
 }
 
+@mixin ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 @mixin color-swap {
     $color-1: lighten($color-primary, 10%);
     $color-2: lighten($color-secondary, 10%);
@@ -46,5 +52,5 @@
 
 // BOUCLES //
 @for $i from 1 to 10 {
-    .menu__box button:nth-child(#{$i}) {animation-delay: $i * 0.30s;}
+    .menu__box a:nth-child(#{$i}) {animation-delay: $i * 0.30s;}
 }

@@ -8,6 +8,8 @@
         @include button-shadow($color-shadow);
         height: 50px;
         width: 180px;
+        text-align: center;
+        padding-top: 15px;
         border: none;
         border-radius: 25px;
         color: white;

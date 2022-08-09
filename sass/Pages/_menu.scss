@@ -3,9 +3,8 @@
     @include menu-border-radius;
     position: relative;
     background-color: $color-background;
-    padding-left: 20px;
+    padding: 0px 20px 50px 20px;
     margin-top: -55px;
-    padding-bottom: 50px;
     &__title {
         display: flex;
         flex-direction: row;
@@ -38,11 +37,17 @@
         gap: 15px;
         margin-bottom: 30px;
         &--btn {
-            position: relative;
+            @include button-shadow($color-shadow);
+            overflow: hidden;
+            text-decoration: none;
+            color: black;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            background-color: white;
+            border-radius: 15px;
             height: 60px;
-            padding: 10px 20px 0px 10px;
+            width: 100%;
+            padding: 10px 20px 10px 10px;
             opacity: 0;
             animation-name: fade-in;
             animation-duration: 2000ms;
@@ -51,55 +56,57 @@
         }
         &--content {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            flex-wrap: wrap;
             justify-content: space-between;   
             width: 100%;
+            //EFFET SLIDE IN CONTENEUR VERT//
+            &:hover + .menu__box--validate{
+                transform: translateX(0%);
+            }
+            //EFFET ROTATION DE LA COCHE//
+            &:hover + .menu__box--validate i{
+                animation-name: spin;
+                animation-duration: 800ms;
+                animation-fill-mode: forwards;
+            }
+        }
+        &--sub {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
         &--plat {
-            font-size: 1.4em;
+            @include ellipsis;
+            font-size: 1.1em;
             font-weight: bold;
             align-self: flex-start;
         }
         &--misc {
-            font-size: 1.1em;
+            @include ellipsis;
+            font-size: .9em;
         }
         &--prix {
             font-weight: bold;
-            align-self: flex-end;
-           
+            align-self: flex-end;  
         }
+        //CONTENEUR VERT DE VALIDATION//
         &--validate {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            border-radius: 0 14px 14px 0;
-            right: 0;
-            top: 0;
-            overflow: hidden;
-            transition: 1s all ease;
-            
-            &::before {
-                content: "";
-                background-color: $color-tertiary;
-                position: absolute;
-                right: 0;
-                top: 0;
-                transition: all 0.6 ease;
-                width: 0%;
-                height: 100%;
-            }
-
-            &:hover::before {
-                animation-name: check-in;
-                animation-duration: 1s;
-                animation-fill-mode: forwards;
-            }
-
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-tertiary;
+            border-radius: 0 15px 15px 0;
+            height: 60px;
+            width: 25%;
+            margin: -10px -21px 0px 20px;
+            transform: translateX(100%);
+            transition-property: transform;
+            transition-duration: 800ms;
             & i {
-                display: none;
+                color: white;
             }
         }
-
     }
     &__box button {
         @include button-shadow($color-shadow);
