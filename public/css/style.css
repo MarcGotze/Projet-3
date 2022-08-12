@@ -48,6 +48,7 @@
   }
   100% {
     transform: rotate(360deg);
+    opacity: 0;
   }
 }
 @keyframes fade-in {
@@ -75,6 +76,31 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes stroke-animation {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  30% {
+    stroke-dashoffset: 1550;
+  }
+  60% {
+    stroke-dashoffset: 3100;
+    fill: transparent;
+    transform: scale(1);
+  }
+  80% {
+    fill: var(--pink);
+    transform: scale(1.4);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    stroke-dashoffset: 3100;
+    fill: var(--pink);
+    stroke: var(--pink);
   }
 }
 * {
@@ -327,18 +353,6 @@ footer li i {
   padding: 10px 0px 0px 10px;
   font-size: 1.1em;
 }
-.cards-rest__txt-box i {
-  position: absolute;
-  align-self: flex-end;
-  line-height: 0;
-  font-size: 1.2em;
-  margin: 20px 20px 0px 0px;
-  color: #9356DC;
-}
-.cards-rest__txt-box i:hover {
-  animation-name: heart-fill-up;
-  animation-duration: 1000ms;
-}
 .cards-rest__new {
   height: 30px;
   width: 80px;
@@ -358,6 +372,44 @@ footer li i {
 .cards-rest a {
   text-decoration: none;
   color: black;
+}
+
+:root {
+  --pink: #FF79DA;
+  --dark-pink: #9356DC;
+}
+
+.icons {
+  position: absolute;
+  align-self: flex-end;
+  line-height: 0;
+  font-size: 1.2em;
+  margin: 20px 20px 0px 0px;
+  fill: transparent;
+  stroke: var(--dark-pink);
+  stroke-width: 2;
+}
+
+svg {
+  overflow: visible;
+}
+
+path {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1550;
+  transform-origin: center;
+}
+
+.heart_background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  stroke: none;
+}
+
+.heart_main:hover path {
+  animation: stroke-animation 2s ease-in-out forwards;
 }
 
 .header-rest {
@@ -453,12 +505,16 @@ footer li i {
   justify-content: space-between;
   width: 100%;
 }
+.menu__box--content:hover + .menu__box--misc {
+  max-width: 200px;
+}
 .menu__box--content:hover + .menu__box--validate {
-  transform: translateX(0%);
+  transform: translateX(0);
+  width: 25%;
 }
 .menu__box--content:hover + .menu__box--validate i {
-  animation-name: spin;
-  animation-duration: 800ms;
+  animation-name: check-rotate;
+  animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
 .menu__box--sub {
@@ -479,6 +535,8 @@ footer li i {
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 0.9em;
+  position: relative;
+  max-width: 250px;
 }
 .menu__box--prix {
   font-weight: bold;
@@ -491,10 +549,9 @@ footer li i {
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   height: 60px;
-  width: 25%;
   margin: -10px -21px 0px 20px;
+  width: 0%;
   transform: translateX(100%);
-  transition-property: transform;
   transition-duration: 800ms;
 }
 .menu__box--validate i {

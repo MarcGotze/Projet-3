@@ -60,14 +60,18 @@
             flex-wrap: wrap;
             justify-content: space-between;   
             width: 100%;
+            &:hover + .menu__box--misc{
+                max-width: 200px;
+            }
             //EFFET SLIDE IN CONTENEUR VERT//
             &:hover + .menu__box--validate{
-                transform: translateX(0%);
+                transform: translateX(0);
+                width: 25%;
             }
             //EFFET ROTATION DE LA COCHE//
             &:hover + .menu__box--validate i{
-                animation-name: spin;
-                animation-duration: 800ms;
+                animation-name: check-rotate;
+                animation-duration: 600ms;
                 animation-fill-mode: forwards;
             }
         }
@@ -85,6 +89,9 @@
         &--misc {
             @include ellipsis;
             font-size: .9em;
+            position: relative;
+            max-width: 250px;
+
         }
         &--prix {
             font-weight: bold;
@@ -98,10 +105,9 @@
             background-color: $color-tertiary;
             border-radius: 0 15px 15px 0;
             height: 60px;
-            width: 25%;
             margin: -10px -21px 0px 20px;
+            width: 0%;
             transform: translateX(100%);
-            transition-property: transform;
             transition-duration: 800ms;
             & i {
                 color: white;
