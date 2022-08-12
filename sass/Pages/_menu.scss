@@ -60,10 +60,14 @@
             flex-wrap: wrap;
             justify-content: space-between;   
             width: 100%;
-            &:hover + .menu__box--misc{
-                max-width: 200px;
-            }
+            transition: width 1s ease-in-out;
             //EFFET SLIDE IN CONTENEUR VERT//
+            &:hover{
+                width: 75%;
+            }
+            &:hover .menu__box--misc, .menu__box--plat{
+                width: 80%;
+            }
             &:hover + .menu__box--validate{
                 width: 25%;
             }
@@ -78,6 +82,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            width: 100%;
         }
         &--plat {
             @include ellipsis;
@@ -106,7 +111,7 @@
             height: 60px;
             margin: -10px -21px 0px 20px;
             width: 0%;
-            transition-duration: 800ms;
+            transition: width 1s ease-in-out;
             & i {
                 color: white;
             }
