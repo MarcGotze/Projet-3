@@ -8,6 +8,10 @@ form {
     height: 50px;
         //ICONE PIN//
         i {
+            @include tablet-only {
+                position: absolute;
+                margin-right: 150px;
+            }
             padding-right: 5%;
         }
 }
@@ -15,13 +19,13 @@ form {
 // BARRE DE RECHERCHE //
 input[type=search] {
     @include ellipsis;
+    @include tablet-only {
+        width: 15%;
+    }
     background-color: $color-research;
     border: none;
     width: 40%;
     font-weight: bold;
     font-size: 1.1em;
     text-align: center;
-        &:active {
-            border: none;
-        }
 }

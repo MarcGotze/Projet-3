@@ -14,4 +14,8 @@ $color-mix: linear-gradient(to bottom right, $color-secondary, $color-primary);
 $font-roboto: 'Roboto', sans-serif;
 $font-shrikhand: 'Shrikhand', cursive;
 
-
+//BREAKPOINTS//
+$breakpoints: (
+    tablet: 768px,
+    desktop: 1024px
+);

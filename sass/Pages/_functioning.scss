@@ -1,12 +1,22 @@
 // BLOC FONCTIONNEMENT //
 .functioning {
     @include flex-column;
+    @include desktop-only {
+        margin: auto;
+        position: relative;
+        height: 230px;
+    }
     gap: 30px;
     height: 400px;
     width: 100%;
     margin-top: 30px;
         //TITRE//
         h2 {
+            @include desktop-only {
+                font-size: 1.5em;
+                padding: 50px 0px 0px 20px;
+                position: relative;
+            }
             font-weight: bold;
             font-size: 1.3em;
             padding: 20px 0px 0px 20px;
@@ -31,6 +41,13 @@
         //CONTENEUR DES BOUTONS//
         &__btn-box {
             @include flex-column;
+            @include desktop-only {
+                flex-direction: row;
+                align-self: center;
+                padding: 0;
+                margin: 0px 20px 0px 20px;
+                gap: 40px;
+            }
             align-items: center;
             justify-content: center;
             width: 100%;
@@ -76,5 +93,11 @@
             i {
                 font-size: 1.20em;
             }
+    }
+
+    .element {
+        @include desktop-only {
+            width: 30%;
+        }
     }
 }

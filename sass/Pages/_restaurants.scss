@@ -34,6 +34,10 @@
 //CARTES//
 .cards {
     @include flex-column;
+    @include desktop-only {
+        flex-direction: row;
+        margin: 20px 20px 0px 20px;
+    }
     margin-top: 20px;
     padding-bottom: 70px;
     align-items: center;
@@ -120,3 +124,4 @@ path {
 .heart_main:hover path {
     animation: stroke-animation 2s ease-in-out forwards;
 }
+

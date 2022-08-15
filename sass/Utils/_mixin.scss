@@ -49,6 +49,18 @@
     background: linear-gradient(to bottom right, $color-1, $color-2);
     box-shadow: 3px 3px 5px $color-3;
 }
+// MEDIA QUERIES // 
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}
 
 // BOUCLES //
 @for $i from 1 to 10 {
