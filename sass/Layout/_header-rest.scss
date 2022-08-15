@@ -15,9 +15,15 @@
         }
     }
     &__logo {
+        @include desktop-only {
+            margin: auto;
+        }
         margin-right: 23%;
     }
     &__img {
+        @include desktop-only {
+            height: 450px;
+        }
         margin-top: 25px;
         width: 100%;
         height: 250px;

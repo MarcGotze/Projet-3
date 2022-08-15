@@ -15,7 +15,9 @@
             @include desktop-only {
                 font-size: 1.5em;
                 padding: 50px 0px 0px 20px;
+                max-width: 1280px;
                 position: relative;
+                margin: auto;
             }
             font-weight: bold;
             font-size: 1.3em;
@@ -44,8 +46,10 @@
             @include desktop-only {
                 flex-direction: row;
                 align-self: center;
-                padding: 0;
-                margin: 0px 20px 0px 20px;
+                padding-bottom: 80px;
+                max-width: 1280px;
+                position: relative;
+                margin: auto;
                 gap: 40px;
             }
             align-items: center;

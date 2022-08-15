@@ -16,16 +16,25 @@
         }
     }
     &__heart {
+        @include desktop-only {
+            width: 95%;
+        }
         display: flex;
         width: 87%;
         justify-content: flex-end;
         padding-bottom: 12px;
     }
     &__subtitle {
+            @include desktop-only {
+                font-size: 1.4em;
+            }
             margin-top: 30px;
             margin-bottom: 15px;
             font-weight: 400;
             &:after {
+                @include desktop-only {
+                    width: 50%;
+                }
                 content:"";
                 display: block;
                 position: relative;
@@ -37,6 +46,9 @@
     //BOUTONS DES PLATS//
     &__box {
         @include flex-column;
+        @include desktop-only {
+            width: 30%;
+        }
         gap: 15px;
         margin-bottom: 30px;
         &--btn {
@@ -58,6 +70,9 @@
 
         }
         &--content {
+            @include desktop-only {
+                flex-direction: unset;
+            }
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -126,5 +141,14 @@
         background-color: white;
         width: 95%;
         border-radius: 15px;
+    }
+
+    &__wrapper {
+        @include desktop-only {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            gap: 50px;
+        }
     }
 }

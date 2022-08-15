@@ -23,10 +23,21 @@
 // BLOCS DE PAGE // 
 .restaurants {
     @include flex-column;
+    @include desktop-only {
+        margin: auto;
+        position: relative;
+    }
     background-color: $color-background;
 
         &__title {
             @include title-format;
+            @include desktop-only {
+                width: 100%;
+                max-width: 1280px;
+                position: relative;
+                margin: auto;
+                padding: 50px 0px 40px 25px;
+            }
             margin-top: 30px;
         }
 }
@@ -36,7 +47,11 @@
     @include flex-column;
     @include desktop-only {
         flex-direction: row;
-        margin: 20px 20px 0px 20px;
+        flex-wrap: wrap;
+        margin: auto;
+        padding-left: 50px;
+        max-width: 1280px;
+        gap: 50px;
     }
     margin-top: 20px;
     padding-bottom: 70px;
@@ -46,6 +61,9 @@
 
 .cards-rest {
     @include button-shadow ($color-shadow);
+    @include desktop-only {
+        width: 45%;
+    }
     background-color: white;
     height: 250px;
     width: 90%;
