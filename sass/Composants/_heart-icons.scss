@@ -1,0 +1,38 @@
+//ICONE COEUR//
+:root {
+    --pink: #FF79DA;
+    --dark-pink: #9356DC;
+}
+
+.icons {
+    position: absolute;
+    align-self: flex-end;
+    line-height: 0;
+    font-size: 1.2em;
+    margin: 20px 20px 0px 0px;
+    fill: transparent;
+    stroke: var(--dark-pink);
+    stroke-width: 2;
+}
+
+svg {
+   overflow: visible;
+}
+
+path {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1550;
+    transform-origin: center;
+}
+
+.heart_background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    stroke: none;
+}
+
+.heart_main:hover path {
+    animation: stroke-animation 2s ease-in-out forwards;
+}

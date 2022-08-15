@@ -2,6 +2,7 @@
 @import "./Utils/variables";
 @import "./Utils/mixin";
 @import "./Utils/keyframes";
+@import "./Utils/functions";
 //BASE//
 @import "./Base/base";
 //LAYOUT//
@@ -16,3 +17,4 @@
 @import "./Pages/menu";
 //COMPOSANTS//
 @import "./Composants/order-btn";
+@import "./Composants/heart-icons";

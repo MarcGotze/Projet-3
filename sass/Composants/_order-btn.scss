@@ -12,6 +12,7 @@
     justify-content: center;
     margin-top: 40px;
     padding-right: 20px;
+    
     &--btn {
         @include button-shadow($color-shadow);
         @include desktop-only {

@@ -5,6 +5,7 @@
     background-color: $color-background;
     padding: 0px 20px 50px 20px;
     margin-top: -55px;
+
     &__title {
         display: flex;
         flex-direction: row;
@@ -15,6 +16,7 @@
             padding: 25px 30px 0px 0px;
         }
     }
+
     &__heart {
         @include desktop-only {
             width: 95%;
@@ -27,6 +29,7 @@
         justify-content: flex-end;
         padding-bottom: 12px;
     }
+
     &__subtitle {
             @include desktop-only {
                 font-size: 1.4em;
@@ -54,6 +57,7 @@
         }
         gap: 15px;
         margin-bottom: 30px;
+
         &--btn {
             @include button-shadow($color-shadow);
             overflow: hidden;
@@ -72,6 +76,7 @@
             animation-fill-mode: forwards;
 
         }
+
         &--content {
             @include desktop-only {
                 flex-direction: unset;
@@ -99,18 +104,21 @@
                 animation-fill-mode: forwards;
             }
         }
+
         &--sub {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
         }
+
         &--plat {
             @include ellipsis;
             font-size: 1.1em;
             font-weight: bold;
             align-self: flex-start;
         }
+
         &--misc {
             @include ellipsis;
             font-size: .9em;
@@ -118,6 +126,7 @@
             max-width: 250px;
 
         }
+
         &--prix {
             font-weight: bold;
             align-self: flex-end;  
@@ -138,6 +147,7 @@
             }
         }
     }
+    
     &__box button {
         @include button-shadow($color-shadow);
         border: none;

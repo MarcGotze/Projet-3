@@ -1,0 +1,4 @@
+// BOUCLE DÉLAI APPARITION BOUTONS MENU-PLATS//
+@for $i from 1 to 10 {
+    .menu__box a:nth-child(#{$i}) {animation-delay: $i * 0.30s;}
+}
