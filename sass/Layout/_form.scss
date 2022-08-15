@@ -14,6 +14,7 @@ form {
 
 // BARRE DE RECHERCHE //
 input[type=search] {
+    @include ellipsis;
     background-color: $color-research;
     border: none;
     width: 40%;

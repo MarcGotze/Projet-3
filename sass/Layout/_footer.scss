@@ -16,6 +16,10 @@ footer {
             gap: 8px;
             list-style: none;
             padding: 20px;
+            & a {
+                color: white;
+                text-decoration: none;
+            }
         }
         //ELEMENTS//
         li i{
