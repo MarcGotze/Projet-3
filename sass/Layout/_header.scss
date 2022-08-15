@@ -7,6 +7,9 @@ header {
             @include desktop-only {
                 width: 20em;
             }
+            @include tablet-only {
+                width: 15em;
+            }
             width: 50%;
         }
 }

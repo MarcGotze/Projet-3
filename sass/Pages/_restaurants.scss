@@ -53,6 +53,10 @@
         max-width: 1280px;
         gap: 50px;
     }
+    @include tablet-only {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     margin-top: 20px;
     padding-bottom: 70px;
     align-items: center;
@@ -60,10 +64,14 @@
 }
 
 .cards-rest {
-    @include button-shadow ($color-shadow);
     @include desktop-only {
         width: 45%;
     }
+    @include tablet-only {
+        width: 45%;
+        margin: auto;
+    }
+    @include button-shadow ($color-shadow);
     background-color: white;
     height: 250px;
     width: 90%;

@@ -19,6 +19,9 @@
         @include desktop-only {
             width: 95%;
         }
+        @include tablet-only {
+            width: 92%;
+        }
         display: flex;
         width: 87%;
         justify-content: flex-end;

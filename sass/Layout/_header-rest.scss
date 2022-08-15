@@ -18,11 +18,17 @@
         @include desktop-only {
             margin: auto;
         }
+        @include tablet-only {
+            margin: auto;
+        }
         margin-right: 23%;
     }
     &__img {
         @include desktop-only {
             height: 450px;
+        }
+        @include tablet-only {
+            height: 400px;
         }
         margin-top: 25px;
         width: 100%;
