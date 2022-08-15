@@ -56,6 +56,12 @@
     }
 }
 
+@mixin functioning-box {
+    margin: auto;
+    position: relative;
+    height: 230px;
+}
+
 @mixin desktop-only {
     @media screen and (min-width: map-get($breakpoints, desktop)){
         @content;

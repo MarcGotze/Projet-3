@@ -309,6 +309,14 @@ footer li i {
     height: 230px;
   }
 }
+@media screen and (min-width: 768px) {
+  .functioning {
+    margin: auto;
+    position: relative;
+    height: 230px;
+    padding-top: 30px;
+  }
+}
 .functioning h2 {
   font-weight: bold;
   font-size: 1.3em;
@@ -323,7 +331,7 @@ footer li i {
     margin: auto;
   }
 }
-.functioning button {
+.functioning a {
   box-shadow: 3px 3px 5px #D8D8D8;
   border: none;
   height: 70px;
@@ -333,10 +341,10 @@ footer li i {
   font-weight: bold;
   font-size: 1em;
 }
-.functioning button:active {
+.functioning a:active {
   background-color: #F5EDFF;
 }
-.functioning button:active i {
+.functioning a:active i {
   color: #9356DC;
 }
 .functioning__btn-box {
@@ -358,6 +366,11 @@ footer li i {
     gap: 40px;
   }
 }
+@media screen and (min-width: 768px) {
+  .functioning__btn-box {
+    flex-direction: row;
+  }
+}
 .functioning__numbers {
   width: 20px;
   border: 1px solid #9356DC;
@@ -365,15 +378,16 @@ footer li i {
   text-align: center;
   color: white;
   background-color: #9356DC;
-  margin-left: -15px;
+  margin-left: -8px;
 }
 .functioning i {
   color: #7E7E7E;
-  margin-left: 8%;
+  margin-left: 10%;
 }
 .functioning h4 {
   flex-grow: 4;
-  margin-right: 15%;
+  text-align: center;
+  padding-right: 50px;
 }
 .functioning .element-1 {
   display: flex;
@@ -415,6 +429,11 @@ footer li i {
   font-size: 1.2em;
 }
 @media screen and (min-width: 1024px) {
+  .functioning .element {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 768px) {
   .functioning .element {
     width: 30%;
   }

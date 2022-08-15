@@ -2,9 +2,11 @@
 .functioning {
     @include flex-column;
     @include desktop-only {
-        margin: auto;
-        position: relative;
-        height: 230px;
+        @include functioning-box;
+    }
+    @include tablet-only {
+        @include functioning-box;
+        padding-top: 30px;
     }
     gap: 30px;
     height: 400px;
@@ -24,7 +26,7 @@
             padding: 20px 0px 0px 20px;
         }
         //BOUTONS//
-        button {
+        a {
             @include button-shadow ($color-shadow);
             border: none;
             height: 70px;
@@ -52,6 +54,10 @@
                 margin: auto;
                 gap: 40px;
             }
+            @include tablet-only {
+                flex-direction: row;
+
+            }
             align-items: center;
             justify-content: center;
             width: 100%;
@@ -65,17 +71,18 @@
             text-align: center;
             color: white;
             background-color: $color-primary;
-            margin-left: -15px;
+            margin-left: -8px;
         }
         //ICONES//
         i {
             color: $color-icon-off;
-            margin-left: 8%;
+            margin-left: 10%;
         }
         //TEXTES BOUTONS//
         h4 {
             flex-grow: 4;
-            margin-right: 15%;
+            text-align: center;
+            padding-right: 50px;
         }
     //TAILLES ICONES//
     .element-1 {
@@ -101,6 +108,9 @@
 
     .element {
         @include desktop-only {
+            width: 30%;
+        }
+        @include tablet-only {
             width: 30%;
         }
     }
