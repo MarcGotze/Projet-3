@@ -331,6 +331,11 @@ footer li i {
     margin: auto;
   }
 }
+@media screen and (min-width: 768px) {
+  .functioning h2 {
+    font-size: 1.5em;
+  }
+}
 .functioning a {
   box-shadow: 3px 3px 5px #D8D8D8;
   border: none;
