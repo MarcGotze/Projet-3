@@ -46,10 +46,10 @@
   0% {
     stroke-dashoffset: 0;
   }
-  30% {
+  20% {
     stroke-dashoffset: 1550;
   }
-  60% {
+  40% {
     stroke-dashoffset: 3100;
     fill: transparent;
     transform: scale(1);
@@ -654,6 +654,20 @@ footer li i {
   animation-duration: 2000ms;
   animation-fill-mode: forwards;
 }
+.menu__box--btn:hover .menu__box--misc, .menu__box--btn .menu__box--plat {
+  width: 80%;
+}
+.menu__box--btn:hover .menu__box--validate {
+  width: 25%;
+}
+.menu__box--btn:hover .menu__box--content {
+  width: 75%;
+}
+.menu__box--btn:hover .menu__box--validate i {
+  animation-name: check-rotate;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
 .menu__box--content {
   display: flex;
   flex-direction: column;
@@ -666,20 +680,6 @@ footer li i {
   .menu__box--content {
     flex-direction: unset;
   }
-}
-.menu__box--content:hover {
-  width: 75%;
-}
-.menu__box--content:hover .menu__box--misc, .menu__box--content .menu__box--plat {
-  width: 80%;
-}
-.menu__box--content:hover + .menu__box--validate {
-  width: 25%;
-}
-.menu__box--content:hover + .menu__box--validate i {
-  animation-name: check-rotate;
-  animation-duration: 600ms;
-  animation-fill-mode: forwards;
 }
 .menu__box--sub {
   display: flex;
@@ -792,7 +792,7 @@ footer li i {
   align-self: flex-end;
   line-height: 0;
   font-size: 1.2em;
-  margin: 20px 20px 0px 0px;
+  margin: 20px 20px 15px 0px;
   fill: transparent;
   stroke: var(--dark-pink);
   stroke-width: 2;

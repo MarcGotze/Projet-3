@@ -74,7 +74,22 @@
             animation-name: fade-in;
             animation-duration: 2000ms;
             animation-fill-mode: forwards;
-
+            //EFFET SLIDE IN CONTENEUR VERT//
+            &:hover .menu__box--misc, .menu__box--plat{
+                width: 80%;
+            }
+            &:hover .menu__box--validate{
+                width: 25%;
+            }
+            &:hover .menu__box--content{
+                width: 75%;
+            }
+            //EFFET ROTATION DE LA COCHE//
+            &:hover .menu__box--validate i{
+                animation-name: check-rotate;
+                animation-duration: 600ms;
+                animation-fill-mode: forwards;
+            }
         }
 
         &--content {
@@ -87,22 +102,6 @@
             justify-content: space-between;   
             width: 100%;
             transition: width 500ms ease-in-out;
-            //EFFET SLIDE IN CONTENEUR VERT//
-            &:hover{
-                width: 75%;
-            }
-            &:hover .menu__box--misc, .menu__box--plat{
-                width: 80%;
-            }
-            &:hover + .menu__box--validate{
-                width: 25%;
-            }
-            //EFFET ROTATION DE LA COCHE//
-            &:hover + .menu__box--validate i{
-                animation-name: check-rotate;
-                animation-duration: 600ms;
-                animation-fill-mode: forwards;
-            }
         }
 
         &--sub {
