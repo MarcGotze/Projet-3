@@ -591,10 +591,9 @@ footer li i {
   display: flex;
   width: 87%;
   justify-content: flex-end;
-  padding-top: 30px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 29px;
   line-height: 0;
   font-size: 1.2em;
   margin: 20px 20px 0px 0px;
